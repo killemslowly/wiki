@@ -28,12 +28,15 @@ export class CustomWikiSearch extends React.Component {
         items.push(<ConnectedSearchForm form="wikiSearch" onSubmit={this.handleSearchSubmit}/>);
 
         if (this.props.searchResults) {
+
             const pageLinks = _.map(this.props.searchResults, pageDescription =>
                 <a
                     style={{display: 'block'}}
                     key={pageDescription.fullurl}
                     href={pageDescription.fullurl}>{pageDescription.title}
                 </a>);
+
+
             items.push(<div key="searchResults">{pageLinks}</div>);
         }
 

@@ -20,10 +20,11 @@ export class SearchForm extends React.Component {
 
     render() {
         return <div>
-            <label>Search wiki </label>
-            <Field name="search" component="input" type="text" placeholder="Type text..." onKeyUp={this.handleOnKeyUp}/>
+            <label>Поиск в Википедии</label> {/*Search wiki*/}
+            <Field name="search" component="input" type="text" placeholder="Введите текст поиска..."
+                onKeyUp={this.handleOnKeyUp}/>
             <button onClick={this.props.handleSubmit} disabled={this.props.pristine || this.props.submitting}>
-                Search
+                Поиск
             </button>
         </div>
     }
