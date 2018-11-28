@@ -4,11 +4,16 @@ export default class ReactComp extends Component {
 
   constructor() {
     super();
+    const rckey = "";
+    const rcid = "";
+    const rchref = "";
+    const rctitle = "";
   }
-  const cKey = this.props.key;
-  const rcid = this.props.id;
-  const rchref = this.props.href;
-  const rctitle = this.props.title;
+  rckey = this.props.key;
+  rcid = this.props.id;
+  rchref = this.props.href;
+  rctitle = this.props.title;
+
 render() {
     return(
       <div id = {rcid} key = {rckey}>
